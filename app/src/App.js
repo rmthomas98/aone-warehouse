@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Vinyl from "./components/Vinyl/Vinyl";
 import Carpet from "./components/Carpet/Carpet";
 import Overview from "./components/Overview/Overview";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="/carpet" element={<Carpet />} />
         <Route path="/overview" element={<Overview />} />
       </Routes>
+      <Footer />
     </div>
   );
 };
