@@ -7,6 +7,7 @@ import carbonizedOak from "../../assets/images/carbonized_oak.jpg";
 import oiledOak from "../../assets/images/oiled_oak.jpg";
 import heritageOak from "../../assets/images/heritage_oak.jpg";
 import nickelFinished from "../../assets/images/nickel_finished.jpg";
+import { Link } from "react-router-dom";
 
 const Amazing = () => {
   return (
@@ -26,8 +27,8 @@ const Amazing = () => {
         <div className={styles.infoContainer}>
           <p className={styles.title}>Espresso Oak</p>
           <div className={styles.buttonContainer}>
-            <button className={styles.buyNowBtn}>Buy Now</button>
-            <button className={styles.detailsBtn}>Details</button>
+            <Link to="/" className={styles.buyNowBtn}>Buy Now</Link>
+            <Link to="/overview" className={styles.detailsBtn}>Details</Link>
           </div>
         </div>
       </div>

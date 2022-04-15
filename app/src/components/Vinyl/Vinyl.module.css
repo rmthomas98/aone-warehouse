@@ -81,7 +81,8 @@
 }
 
 .detailsBtn {
-  background: #e2e5e9;
+  /* background: #e2e5e9; */
+  background: #eceff3;
   border: none;
   border-radius: 8px;
   padding: 10px;
@@ -94,6 +95,9 @@
   transition: 300ms;
   margin-left: 10px;
   box-shadow: 0px 1px 3px #0000003b;
+  font-size: 13.3px;
+  text-decoration: none;
+  text-align: center;
 }
 
 .detailsBtn:hover {
@@ -113,6 +117,9 @@
   letter-spacing: 0.5px;
   color: #fff;
   transition: 400ms;
+  font-size: 13.3px;
+  text-decoration: none;
+  text-align: center;
 }
 
 .buyNowBtn:hover {
