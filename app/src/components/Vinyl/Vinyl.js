@@ -1,22 +1,21 @@
-import styles from './Vinyl.module.css'
-import arcticOak from '../../assets/images/arctic_oak.jpg'
+import styles from "./Vinyl.module.css";
+import Amazing from "./Amazing";
+import { useState } from "react";
+import Nav from "./Nav";
+import Incredible from "./Incredible";
 
 const Vinyl = () => {
+  const [tab, setTab] = useState("amazing");
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <p className={styles.header}>NextFloor - Amazing</p>
-        <div className={styles.gridContainer}>
-          <div className={styles.productContainer}>
-            <img src={arcticOak} className={styles.image}/>
-            <p className={styles.title}>Arctic Oak</p>
-            <button>Availability</button>
-            <button>Details</button>
-          </div>
-        </div>
+        <Nav tab={tab} setTab={setTab} />
+        {tab === "amazing" && <Amazing />}
+        {tab === "incredible" && <Incredible />}
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Vinyl;

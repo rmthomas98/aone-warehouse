@@ -1,0 +1,34 @@
+.wrapper {
+  padding: 0px 16px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.navContainer {
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  padding: 6px;
+  border-radius: 10px;
+  background: #eceff3;
+  width: fit-content;
+}
+
+.navLink {
+  font-size: 70%;
+  font-weight: 600;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #00000091;
+  transition: 300ms;
+  border-radius: 8px;
+  margin-right: 5px;
+}
+
+.navLink:hover {
+  color: #000;
+}

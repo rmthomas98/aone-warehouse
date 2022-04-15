@@ -1,6 +1,10 @@
 .wrapper {
   padding: 20px 16px;
-  /* box-shadow: 0px 5px 10px #dbdeeb;; */
+  box-shadow: 0px 5px 10px #0000002d;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background: #ffffff;
 }
 
 .container {
@@ -32,11 +36,11 @@
 }
 
 .visitBtn {
-  background: linear-gradient(to right, #fc00ff, #00dbde);
+  background: linear-gradient(45deg, #5e0059, #0b8793);
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 10px 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   cursor: pointer;
   letter-spacing: 0.5px;
@@ -45,6 +49,6 @@
 }
 
 .visitBtn:hover {
-  transform: scale(0.95);
-  box-shadow: 0px 10px 20px #cbd0ff;
+  transform: scale(0.97);
+  box-shadow: 0px 10px 20px #bfc3e0;
 }

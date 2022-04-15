@@ -1,11 +1,13 @@
 import styles from "./Nav.module.css";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <Link to="/" className={styles.title}>A-1 Carpet Warehouse</Link>
+        <Link to="/" className={styles.title}>
+          A-1 Carpet
+        </Link>
         <div className={styles.linkContainer}>
           <Link to="/" smooth className={styles.link}>
             Vinyl Planks
