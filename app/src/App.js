@@ -14,7 +14,7 @@ const App = () => {
         <Route path="/carpet" element={<Carpet />} />
         <Route path="/overview" element={<Overview />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

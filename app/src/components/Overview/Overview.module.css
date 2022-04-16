@@ -30,11 +30,13 @@
   font-weight: 700;
   font-size: 130%;
   margin-bottom: 10px;
+  text-transform: capitalize;
 }
 
 .color {
   margin-bottom: 10px;
   font-size: 90%;
+  text-transform: capitalize;
 }
 
 .title {
@@ -75,5 +77,3 @@
   width: 100%;
   display: flex;
 }
-
-
