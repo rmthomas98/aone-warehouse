@@ -1,4 +1,64 @@
 .wrapper {
-  padding: 30px 16px;
+  padding: 70px 16px;
+  padding-bottom: 50px;
   background: #000;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-weight: 500;
+  color: #fff;
+  font-size: 110%;
+}
+
+.link,
+.description {
+  color: #ffffffcb;
+  font-size: 65%;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 200ms;
+}
+
+.description {
+  cursor: auto;
+}
+
+.link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.bottomFooter {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.certified {
+  height: 60px;
+}
+
+.shaw {
+  height: 30px;
+  margin-right: 25px;
 }

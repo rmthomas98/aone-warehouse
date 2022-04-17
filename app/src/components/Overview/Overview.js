@@ -5,11 +5,10 @@ import arcticOak from "../../assets/images/arctic_oak.jpg";
 import arcticOakRoom from "../../assets/images/arctic_oak_1.jpg";
 import { Link, useLocation } from "react-router-dom";
 import Collection from "../Collection/Collection";
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 
 const Overview = () => {
   const location = useLocation();
-  console.log(location.state);
 
   const [style, setStyle] = useState();
   const [color, setColor] = useState();
@@ -25,19 +24,25 @@ const Overview = () => {
   ];
 
   useEffect(() => {
-    if (location.state?.style) {
-      setStyle(location.state.style);
-      setColor(location.state.color);
-      setImg({
-        closeUp: location.state.closeImg,
-        room: location.state.roomImg,
-      });
-    } else {
-      console.log("new");
-      setStyle("amazing");
-      setColor("arctic oak");
-      setImg({ closeUp: arcticOak, room: arcticOakRoom });
-    }
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  useEffect(() => {
+    setImg();
+    setTimeout(() => {
+      if (location.state?.style) {
+        setStyle(location.state.style);
+        setColor(location.state.color);
+        setImg({
+          closeUp: location.state.closeImg,
+          room: location.state.roomImg,
+        });
+      } else {
+        setStyle("amazing");
+        setColor("arctic oak");
+        setImg({ closeUp: arcticOak, room: arcticOakRoom });
+      }
+    }, 0.1);
   }, [location]);
 
   if (!img) return <div></div>;
@@ -107,7 +112,7 @@ const Overview = () => {
             </div>
           </div>
         </div>
-        <Collection />
+        <Collection color={color} style={style} />
       </div>
     </div>
   );

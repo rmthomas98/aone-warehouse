@@ -8,7 +8,7 @@ const Nav = () => {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <Link to="/" className={styles.title}>
-          A-1 Carpet
+          A-1 Carpet & Tile
         </Link>
         <div className={styles.linkContainer}>
           <Link
@@ -31,7 +31,10 @@ const Nav = () => {
           <Link
             to="/contact"
             className={styles.link}
-            style={{ color: pathname === "/contact" ? "#000" : "", fontWeight: pathname === "/contact" ? "700" : ""  }}
+            style={{
+              color: pathname === "/contact" ? "#000" : "",
+              fontWeight: pathname === "/contact" ? "700" : "",
+            }}
           >
             Contact
           </Link>
