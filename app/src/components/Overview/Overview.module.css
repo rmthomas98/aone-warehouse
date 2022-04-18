@@ -52,29 +52,34 @@
 }
 
 .buyBtn {
-  background: linear-gradient(45deg, #5e0059, #0b8793);
+  /* background: linear-gradient(45deg, #5e0059, #0b8793); */
+  /* background: linear-gradient(45deg, #ff00cc, #333399); */
+  background: linear-gradient(to right, #fe8c00, #f83600);
   border: none;
   border-radius: 8px;
   padding: 14px;
-  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   width: 100%;
   cursor: pointer;
   letter-spacing: 0.5px;
   color: #fff;
   transition: 400ms;
-  font-size: 13.3px;
+  font-size: 14px;
   text-decoration: none;
   text-align: center;
 }
 
 .buyBtn:hover {
   transform: scale(0.97);
-  box-shadow: 0px 10px 20px #9b9fbb;
+  box-shadow: 0px 10px 20px #bbc0dd;
 }
 
 .buttonContainer {
   margin-top: 18px;
   width: 100%;
   display: flex;
+}
+
+.loading {
+  height: 100vh;
 }

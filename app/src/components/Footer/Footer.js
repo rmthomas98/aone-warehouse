@@ -33,7 +33,7 @@ const Footer = () => {
           </div>
           <div className={styles.otherLinks}>
             <p className={styles.title}>Other Links</p>
-            <Link to="/" className={styles.link}>
+            <Link to="/contact" className={styles.link}>
               Contact
             </Link>
             <Link to="/" className={styles.link} style={{ marginTop: 10 }}>

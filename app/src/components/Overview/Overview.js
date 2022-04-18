@@ -45,7 +45,7 @@ const Overview = () => {
     }, 0.1);
   }, [location]);
 
-  if (!img) return <div></div>;
+  if (!img) return <div className={styles.loading}></div>;
 
   return (
     <div className={styles.wrapper}>

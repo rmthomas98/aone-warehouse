@@ -4,11 +4,17 @@ import arcticOakRoom from "../../assets/images/arctic_oak_1.jpg";
 import espressoOak from "../../assets/images/espresso_oak.jpg";
 import espressoOakRoom from "../../assets/images/espresso_oak_1.jpg";
 import smokeyOak from "../../assets/images/smokey_oak.jpg";
+import smokeyOakRoom from "../../assets/images/smokey_oak_1.jpg";
 import tavernOak from "../../assets/images/tavern_oak.jpg";
+import tavernOakRoom from "../../assets/images/tavern_oak_1.jpg";
 import carbonizedOak from "../../assets/images/carbonized_oak.jpg";
+import carbonizedOakRoom from "../../assets/images/carbonized_oak_1.jpg";
 import oiledOak from "../../assets/images/oiled_oak.jpg";
+import oiledOakRoom from "../../assets/images/oiled_oak_1.jpg";
 import heritageOak from "../../assets/images/heritage_oak.jpg";
+import heritageOakRoom from "../../assets/images/heritage_oak_1.jpg";
 import nickelFinished from "../../assets/images/nickel_finished.jpg";
+import nickelFinishedRoom from "../../assets/images/nickel_finished_1.jpg";
 import { Link } from "react-router-dom";
 import SwiperCore, { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -96,7 +102,16 @@ const Amazing = ({ color }) => {
                   <Link to="/" className={styles.buyNowBtn}>
                     Buy Now
                   </Link>
-                  <Link to="/overview" className={styles.detailsBtn}>
+                  <Link
+                    to="/overview"
+                    className={styles.detailsBtn}
+                    state={{
+                      style: "amazing",
+                      closeImg: smokeyOak,
+                      roomImg: smokeyOakRoom,
+                      color: "smokey oak",
+                    }}
+                  >
                     Details
                   </Link>
                 </div>
@@ -114,7 +129,16 @@ const Amazing = ({ color }) => {
                   <Link to="/" className={styles.buyNowBtn}>
                     Buy Now
                   </Link>
-                  <Link to="/overview" className={styles.detailsBtn}>
+                  <Link
+                    to="/overview"
+                    className={styles.detailsBtn}
+                    state={{
+                      style: "amazing",
+                      closeImg: tavernOak,
+                      roomImg: tavernOakRoom,
+                      color: "tavern oak",
+                    }}
+                  >
                     Details
                   </Link>
                 </div>
@@ -132,7 +156,16 @@ const Amazing = ({ color }) => {
                   <Link to="/" className={styles.buyNowBtn}>
                     Buy Now
                   </Link>
-                  <Link to="/overview" className={styles.detailsBtn}>
+                  <Link
+                    to="/overview"
+                    className={styles.detailsBtn}
+                    state={{
+                      style: "amazing",
+                      closeImg: carbonizedOak,
+                      roomImg: carbonizedOakRoom,
+                      color: "carbonized oak",
+                    }}
+                  >
                     Details
                   </Link>
                 </div>
@@ -150,7 +183,16 @@ const Amazing = ({ color }) => {
                   <Link to="/" className={styles.buyNowBtn}>
                     Buy Now
                   </Link>
-                  <Link to="/overview" className={styles.detailsBtn}>
+                  <Link
+                    to="/overview"
+                    className={styles.detailsBtn}
+                    state={{
+                      style: "amazing",
+                      closeImg: oiledOak,
+                      roomImg: oiledOakRoom,
+                      color: "naturally oiled oak",
+                    }}
+                  >
                     Details
                   </Link>
                 </div>
@@ -168,7 +210,16 @@ const Amazing = ({ color }) => {
                   <Link to="/" className={styles.buyNowBtn}>
                     Buy Now
                   </Link>
-                  <Link to="/overview" className={styles.detailsBtn}>
+                  <Link
+                    to="/overview"
+                    className={styles.detailsBtn}
+                    state={{
+                      style: "amazing",
+                      closeImg: heritageOak,
+                      roomImg: heritageOakRoom,
+                      color: "tavern oak",
+                    }}
+                  >
                     Details
                   </Link>
                 </div>
@@ -186,7 +237,16 @@ const Amazing = ({ color }) => {
                   <Link to="/" className={styles.buyNowBtn}>
                     Buy Now
                   </Link>
-                  <Link to="/overview" className={styles.detailsBtn}>
+                  <Link
+                    to="/overview"
+                    className={styles.detailsBtn}
+                    state={{
+                      style: "amazing",
+                      closeImg: nickelFinished,
+                      roomImg: nickelFinishedRoom,
+                      color: "nickel finished oak",
+                    }}
+                  >
                     Details
                   </Link>
                 </div>
