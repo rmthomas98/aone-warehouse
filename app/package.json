@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@geist-ui/core": "^2.3.4",
+    "@react-hook/window-size": "^3.0.7",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
     "@testing-library/user-event": "^13.5.0",

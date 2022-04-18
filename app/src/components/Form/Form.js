@@ -55,6 +55,7 @@ const Form = () => {
         ref={form}
       >
         <p className={styles.smallHeader}>Contact Form</p>
+        <p className={styles.description}>Reach out to us with any questions you may have and we will get back with you shortly.</p>
         <div className={styles.nameContainer}>
           <div className={`${styles.inputContainer} ${styles.first}`}>
             <p

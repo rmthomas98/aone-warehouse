@@ -10,8 +10,7 @@
   justify-content: center;
   align-items: center;
   height: 450px;
-  /* background: linear-gradient(45deg, #ff00cc, #333399); */
-  background: linear-gradient(to right, #fe8c00, #f83600);
+  background: linear-gradient(to right, #8a2387, #e94057, #f27121);
 }
 
 .header {
@@ -63,7 +62,7 @@
 }
 
 .description {
-  font-size: 80%;
+  font-size: 75%;
   line-height: 1.4;
   font-weight: 500;
 }
@@ -86,7 +85,7 @@
 }
 
 .actionBtn {
-  background: linear-gradient(to right, #fe8c00, #f83600);
+  background: linear-gradient(to right, #8a2387, #e94057, #f27121); 
   font-weight: 500;
   font-size: 14px;
   color: #fff;
@@ -106,4 +105,35 @@
 .actionBtn:hover {
   transform: scale(0.97);
   box-shadow: 0px 10px 20px #bbc0dd;
+}
+
+@media only screen and (max-width: 930px) {
+  .flexContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .flexChildContainer {
+    max-width: 500px;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    font-size: 200%;
+  }
+  .smallHeader {
+    font-size: 170%;
+  }
+  .subHeader {
+    font-size: 70%;
+    max-width: 350px;
+  }
+  .description {
+    font-size: 70%;
+  }
+  .banner {
+    height: 400px;
+  }
 }

@@ -5,14 +5,18 @@ import arcticOak from "../../assets/images/arctic_oak.jpg";
 import arcticOakRoom from "../../assets/images/arctic_oak_1.jpg";
 import { Link, useLocation } from "react-router-dom";
 import Collection from "../Collection/Collection";
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { useWindowWidth } from "@react-hook/window-size";
 
 const Overview = () => {
   const location = useLocation();
 
+  const width = useWindowWidth();
+
   const [style, setStyle] = useState();
   const [color, setColor] = useState();
   const [img, setImg] = useState();
+  const [size, setSize] = useState();
 
   const images = [
     {
@@ -22,6 +26,16 @@ const Overview = () => {
       url: img?.closeUp,
     },
   ];
+
+  useEffect(() => {
+    if (width >= 1000) {
+      setSize(600);
+    } else if (width > 750) {
+      setSize(width - 300);
+    } else {
+      setSize(width - 32);
+    }
+  }, [width]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -53,8 +67,8 @@ const Overview = () => {
         <img src={logo} className={styles.logo} />
         <div className={styles.flexContainer}>
           <SimpleImageSlider
-            width={600}
-            height={600}
+            height={size}
+            width={size}
             images={images}
             showBullets={true}
             showNavs={true}
@@ -110,6 +124,12 @@ const Overview = () => {
                 Buy Now
               </Link>
             </div>
+          </div>
+        </div>
+        <div className={styles.mobileContainer}>
+          <div className={styles.specContainer}>
+            <p>{style}</p>
+            <p>{color}</p>
           </div>
         </div>
         <Collection color={color} style={style} />

@@ -34,6 +34,13 @@
   text-transform: capitalize;
 }
 
+.mobileStyle {
+  font-weight: 500;
+  font-size: 100%;
+  text-transform: capitalize;
+  margin-top: 15px;
+}
+
 .color {
   margin-bottom: 10px;
   font-size: 90%;
@@ -52,9 +59,7 @@
 }
 
 .buyBtn {
-  /* background: linear-gradient(45deg, #5e0059, #0b8793); */
-  /* background: linear-gradient(45deg, #ff00cc, #333399); */
-  background: linear-gradient(to right, #fe8c00, #f83600);
+  background: linear-gradient(to right, #8a2387, #e94057, #f27121);
   border: none;
   border-radius: 8px;
   padding: 14px;
@@ -82,4 +87,23 @@
 
 .loading {
   height: 100vh;
+}
+
+.specContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 700px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+  .flexContainer {
+    flex-direction: column;
+  }
+  .infoContainer {
+    display: none;
+  }
+  .mobileContainer {
+    display: block;
+  }
 }

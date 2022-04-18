@@ -35,7 +35,7 @@ const Contact = () => {
               rmthomas@aonecarpet.com
             </a>
             <div className={styles.btnContainer}>
-              <ScrollLink smooth to="contact-form" className={styles.actionBtn}>
+              <ScrollLink smooth offset={-76} to="contact-form" className={styles.actionBtn}>
                 Send Message
               </ScrollLink>
             </div>
